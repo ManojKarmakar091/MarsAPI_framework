@@ -9,7 +9,7 @@ var geturl = require("../TestData/apiUrls.js")
 
 var getToken = require("../fixtures/token")
 var logger = require("../Logger/log4jsconf")
-var confini = require("../Utils/Common/configFileUtil")
+var confini = require("../utils/Common/configFileUtil")
 
 
 
@@ -104,7 +104,7 @@ describe('API Testing', () => {
 
 
     })
-
+    
 
 
 
