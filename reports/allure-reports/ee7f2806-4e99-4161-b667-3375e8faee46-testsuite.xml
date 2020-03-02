@@ -1,0 +1,65 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1583141947723' stop='1583141952342'>
+    <name>API Testing</name>
+    <title>API Testing</title>
+    <test-cases>
+        <test-case start='1583141947725' status='failed' stop='1583141948619'>
+            <name>API:GET CALL @smoke</name>
+            <title>API:GET CALL @smoke</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='079a2608-0b43-4d3c-9f1b-1bdb5c714f5e-attachment.png' type='image/png' size='3249'/>
+            </attachments>
+            <failure>
+                <message>Expected Object({ id: 57, accountNumber: 'VCA-OU-71', addressLine1: 'string', addressLine2: 'string', addressLine3: 'string', streetName: 'string', area: 'string', zipCode: 560098, country: 'string', createdOn: '2020-02-24T11:17:56.283', modifiedOn: '2020-02-24T11:15:29.823', isPrimary: false, isActive: true }) to equal 'VCA-OU-71'.</message>
+                <stack-trace>Error: Failed expectation
+                    at UserContext.&lt;anonymous> (D:\Mars_VoyagerAPI\TestSuites\sampleTestCase.spec.js:68:40)
+                    at processTicksAndRejections (internal/process/task_queues.js:97:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1583141948619' status='failed' stop='1583141950446'>
+            <name>API:POST CALL @smoke</name>
+            <title>API:POST CALL @smoke</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='7bc0860b-b7e8-45f3-a0ed-29ee7c454772-attachment.png' type='image/png' size='3249'/>
+            </attachments>
+            <failure>
+                <message>Expected undefined to equal 'VCA-OU-71'.</message>
+                <stack-trace>Error: Failed expectation
+                    at UserContext.&lt;anonymous> (D:\Mars_VoyagerAPI\TestSuites\sampleTestCase.spec.js:102:38)
+                    at processTicksAndRejections (internal/process/task_queues.js:97:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1583141950446' status='passed' stop='1583141951467'>
+            <name>API:PUT CALL @regression</name>
+            <title>API:PUT CALL @regression</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='657e7785-8b68-412e-a5c9-8eb8073d93a4-attachment.png' type='image/png' size='3249'/>
+            </attachments>
+        </test-case>
+        <test-case start='1583141951467' status='failed' stop='1583141952341'>
+            <name>API:GET CALL FOR NOTES @smoke</name>
+            <title>API:GET CALL FOR NOTES @smoke</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='bd65dce9-63e7-4146-a4d0-cfc237d268b6-attachment.png' type='image/png' size='3249'/>
+            </attachments>
+            <failure>
+                <message>Expected Object({ id: 121, accountNumber: 'VCA-OU-71', createdBy: 'Manoj', updatedBy: null, note: 'This note is created' }) to equal 'VCA-OU-71'.</message>
+                <stack-trace>Error: Failed expectation
+                    at UserContext.&lt;anonymous> (D:\Mars_VoyagerAPI\TestSuites\sampleTestCase.spec.js:138:37)
+                    at processTicksAndRejections (internal/process/task_queues.js:97:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,87 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1583142304942' stop='1583142309730'>
+    <name>API Testing</name>
+    <title>API Testing</title>
+    <test-cases>
+        <test-case start='1583142304943' status='failed' stop='1583142305889'>
+            <name>API:GET CALL @smoke</name>
+            <title>API:GET CALL @smoke</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='4e72edad-6e99-4038-8758-0af94bec18fc-attachment.png' type='image/png' size='3249'/>
+            </attachments>
+            <failure>
+                <message>Expected Object({ id: 57, accountNumber: 'VCA-OU-71', addressLine1: 'string', addressLine2: 'string', addressLine3: 'string', streetName: 'string', area: 'string', zipCode: 560098, country: 'string', createdOn: '2020-02-24T11:17:56.283', modifiedOn: '2020-02-24T11:15:29.823', isPrimary: false, isActive: true }) to equal 'VCA-OU-71'.</message>
+                <stack-trace>Error: Failed expectation
+                    at UserContext.&lt;anonymous> (D:\Mars_VoyagerAPI\TestSuites\sampleTestCase.spec.js:68:40)
+                    at processTicksAndRejections (internal/process/task_queues.js:97:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1583142305889' status='failed' stop='1583142307759'>
+            <name>API:POST CALL @smoke</name>
+            <title>API:POST CALL @smoke</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='3bd716b3-f0e9-4a4b-a1c7-d197695fef3d-attachment.png' type='image/png' size='3249'/>
+            </attachments>
+            <failure>
+                <message>Expected undefined to equal 'VCA-OU-71'.</message>
+                <stack-trace>Error: Failed expectation
+                    at UserContext.&lt;anonymous> (D:\Mars_VoyagerAPI\TestSuites\sampleTestCase.spec.js:102:38)
+                    at processTicksAndRejections (internal/process/task_queues.js:97:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1583142307759' status='passed' stop='1583142308838'>
+            <name>API:PUT CALL @regression</name>
+            <title>API:PUT CALL @regression</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='a4d89ddf-5220-437f-b400-2d689f87b609-attachment.png' type='image/png' size='3249'/>
+            </attachments>
+        </test-case>
+        <test-case start='1583142308838' status='failed' stop='1583142309729'>
+            <name>API:GET CALL FOR NOTES @smoke</name>
+            <title>API:GET CALL FOR NOTES @smoke</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='19053d16-bfe2-4c43-b538-bfc78ecff42a-attachment.png' type='image/png' size='3249'/>
+            </attachments>
+            <failure>
+                <message>Failed: Cannot read property 'accountNumber' of undefined</message>
+                <stack-trace>TypeError: Cannot read property 'accountNumber' of undefined
+                    at UserContext.&lt;anonymous> (D:\Mars_VoyagerAPI\TestSuites\sampleTestCase.spec.js:138:47)
+                    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+                From: Task: Run it("API:GET CALL FOR NOTES @smoke") in control flow
+                    at UserContext.&lt;anonymous> (C:\Users\manoj.karmkar\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:94:19)
+                    at attempt (C:\Users\manoj.karmkar\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+                    at QueueRunner.run (C:\Users\manoj.karmkar\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+                    at QueueRunner.execute (C:\Users\manoj.karmkar\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
+                    at Spec.queueRunnerFactory (C:\Users\manoj.karmkar\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:909:35)
+                    at Spec.execute (C:\Users\manoj.karmkar\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:526:10)
+                    at UserContext.fn (C:\Users\manoj.karmkar\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:5340:37)
+                    at attempt (C:\Users\manoj.karmkar\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+                    at QueueRunner.run (C:\Users\manoj.karmkar\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+                    at runNext (C:\Users\manoj.karmkar\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4257:20)
+                From asynchronous test: 
+                Error
+                    at Suite.&lt;anonymous> (D:\Mars_VoyagerAPI\TestSuites\sampleTestCase.spec.js:126:7)
+                    at addSpecsToSuite (C:\Users\manoj.karmkar\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+                    at Env.describe (C:\Users\manoj.karmkar\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+                    at describe (C:\Users\manoj.karmkar\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+                    at Object.&lt;anonymous> (D:\Mars_VoyagerAPI\TestSuites\sampleTestCase.spec.js:17:1)
+                    at Module._compile (internal/modules/cjs/loader.js:1128:30)
+                    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)
+                    at Module.load (internal/modules/cjs/loader.js:983:32)
+                    at Function.Module._load (internal/modules/cjs/loader.js:891:14)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

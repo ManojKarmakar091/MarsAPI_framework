@@ -1,4 +1,4 @@
-var axios = require("./node_modules/axios");
+var axios = require("../node_modules/axios");
 
 var apiHelper = function () {
 

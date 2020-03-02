@@ -1,0 +1,59 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1583140230260' stop='1583140235599'>
+    <name>API Testing</name>
+    <title>API Testing</title>
+    <test-cases>
+        <test-case start='1583140230261' status='failed' stop='1583140231256'>
+            <name>API:GET CALL @smoke</name>
+            <title>API:GET CALL @smoke</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='e3e6929c-96de-4061-a572-2acba1c371e4-attachment.png' type='image/png' size='3249'/>
+            </attachments>
+            <failure>
+                <message>Expected 200 to equal 201.</message>
+                <stack-trace>Error: Failed expectation
+                    at UserContext.&lt;anonymous> (D:\Mars_VoyagerAPI\TestSuites\sampleTestCase.spec.js:61:37)
+                    at processTicksAndRejections (internal/process/task_queues.js:97:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1583140231256' status='failed' stop='1583140233355'>
+            <name>API:POST CALL @smoke</name>
+            <title>API:POST CALL @smoke</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='ed19c722-7e60-49ed-b965-93afcf759abd-attachment.png' type='image/png' size='3249'/>
+            </attachments>
+            <failure>
+                <message>Expected 'VCA-OU-162' to equal 'VCA-OU-71'.</message>
+                <stack-trace>Error: Failed expectation
+                    at UserContext.&lt;anonymous> (D:\Mars_VoyagerAPI\TestSuites\sampleTestCase.spec.js:101:37)
+                    at processTicksAndRejections (internal/process/task_queues.js:97:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1583140233355' status='passed' stop='1583140234519'>
+            <name>API:PUT CALL @regression</name>
+            <title>API:PUT CALL @regression</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='198734c4-d235-4bb6-b824-bd3d65fb2dc8-attachment.png' type='image/png' size='3249'/>
+            </attachments>
+        </test-case>
+        <test-case start='1583140234519' status='passed' stop='1583140235598'>
+            <name>API:GET CALL FOT NOTES @smoke</name>
+            <title>API:GET CALL FOT NOTES @smoke</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='e715d789-f38c-45b5-aab7-2c3900d1e68a-attachment.png' type='image/png' size='3249'/>
+            </attachments>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

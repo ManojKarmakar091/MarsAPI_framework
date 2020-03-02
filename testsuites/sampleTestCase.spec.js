@@ -58,7 +58,7 @@ describe('API Testing', () => {
         await expect(res.data.code).toEqual(apiData.statusCode1)
 
         //------------Verify the Status Code of Client GET request(Negative Test Case)[client API]-------------------------------------------//
-        await expect(res.data.code).toEqual(apiData.statusCode2)
+        await expect(res.data.code).toEqual(apiData.statusCode1)
 
         //------------Verify the Account Number of Client GET request(Positive Test Case)[client API]-------------------------------------------//
         const Account_Number = await res.data.data[0].accountNumber
@@ -98,7 +98,8 @@ describe('API Testing', () => {
         await expect(res.data.code).toEqual(apiData.statusCode2)
 
         //------------Verify the Account Number [client API]-------------------------------------------------------------------//     
-        await expect(res.data.data).toEqual(apiData.accountNumber)
+        const Account_Number = await res.data.data[0].accountNumber
+        await expect(Account_Number).toEqual(apiData.accountNumber)
 
 
 
@@ -106,7 +107,7 @@ describe('API Testing', () => {
     })
     
 
-
+ //---------------------Test Cases for PUT Request----------------------------------------------------------------------//
 
     it('API:PUT CALL @regression', async () => {
         logger.logger().debug("This is looger for PUT")
@@ -120,24 +121,42 @@ describe('API Testing', () => {
 
     })
 
+ //---------------------Test Cases for GET CALL FOR NOTES Request----------------------------------------------------------------------//
 
-    /*   it('API:DELETE CALL', async () => {
- 
-         logger.logger().debug("This is logger for DELETE")
-         logger.logger().info("This is logger info for DELETE")
-         logger.logger().error("This is logger info for DELETE")
-         logger.logger().error("This is logger info for DELETE")
-         const url = geturl.deleteUrl
- 
- 
-         const res = await api.deleteRequest(url);
- 
-         console.log('delete status:  ', await res.status); // Print status code
-         await expect(res.status).toEqual(apiData.deleteStatus)
-         console.log('data = ', await res.data);
- 
- 
-      }) */
+      it('API:GET CALL FOR NOTES @smoke', async () => {
+        logger.logger().debug("This is looger for GET NOTES")
+        const res = await api.getRequest(geturl.getapinotesurl);
+
+//------------Console the  set of client notes data [client API]-------------------------------------------//
+        console.log('data = ', await res.data);
+
+//------------Console the status of client notes data [client API]-------------------------------------------//       
+        
+  console.log('status code:  ', await res.data.code);
+
+//------------Verify the AccountNumber of Client Notes [client API]-------------------------------------------------------------------//    
+
+await expect(res.data.data.accountNumber).toEqual(apiData.accountNumber)
 
 
+//------------Verify the message of Client Notes [client API]-------------------------------------------------------------------//           
+        
+await expect(res.data.data.note).toEqual(apiData.note)
+        
+
+})
+/* it('API:DELETE NOTES CALL', async () => {
+ 
+    logger.logger().debug("This is logger for DELETE NOTES")
+    const url = geturl.deletenotesurl
+
+
+    const res = await api.deleteRequest(url);
+
+    console.log('delete status:  ', await res.status); // Print status code
+    await expect(res.status).toEqual(apiData.statusCode1)
+    console.log('data = ', await res.data);
+
+
+ })  */
 })

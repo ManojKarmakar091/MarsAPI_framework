@@ -1,0 +1,59 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1583142440057' stop='1583142444808'>
+    <name>API Testing</name>
+    <title>API Testing</title>
+    <test-cases>
+        <test-case start='1583142440059' status='failed' stop='1583142440988'>
+            <name>API:GET CALL @smoke</name>
+            <title>API:GET CALL @smoke</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='717e9bf3-f8ce-4daa-9844-da5674e125fd-attachment.png' type='image/png' size='3249'/>
+            </attachments>
+            <failure>
+                <message>Expected Object({ id: 57, accountNumber: 'VCA-OU-71', addressLine1: 'string', addressLine2: 'string', addressLine3: 'string', streetName: 'string', area: 'string', zipCode: 560098, country: 'string', createdOn: '2020-02-24T11:17:56.283', modifiedOn: '2020-02-24T11:15:29.823', isPrimary: false, isActive: true }) to equal 'VCA-OU-71'.</message>
+                <stack-trace>Error: Failed expectation
+                    at UserContext.&lt;anonymous> (D:\Mars_VoyagerAPI\TestSuites\sampleTestCase.spec.js:68:40)
+                    at processTicksAndRejections (internal/process/task_queues.js:97:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1583142440988' status='failed' stop='1583142442825'>
+            <name>API:POST CALL @smoke</name>
+            <title>API:POST CALL @smoke</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='cbf77996-eb2d-43aa-9fd1-fd876e483980-attachment.png' type='image/png' size='3249'/>
+            </attachments>
+            <failure>
+                <message>Expected undefined to equal 'VCA-OU-71'.</message>
+                <stack-trace>Error: Failed expectation
+                    at UserContext.&lt;anonymous> (D:\Mars_VoyagerAPI\TestSuites\sampleTestCase.spec.js:102:38)
+                    at processTicksAndRejections (internal/process/task_queues.js:97:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1583142442826' status='passed' stop='1583142443915'>
+            <name>API:PUT CALL @regression</name>
+            <title>API:PUT CALL @regression</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='1e0d682a-7b89-40f1-a748-aa05a1266e68-attachment.png' type='image/png' size='3249'/>
+            </attachments>
+        </test-case>
+        <test-case start='1583142443915' status='passed' stop='1583142444807'>
+            <name>API:GET CALL FOR NOTES @smoke</name>
+            <title>API:GET CALL FOR NOTES @smoke</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='67655067-ae95-49ae-9095-a6c2837a7bc0-attachment.png' type='image/png' size='3249'/>
+            </attachments>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

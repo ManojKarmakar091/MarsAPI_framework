@@ -15,7 +15,8 @@ module.exports =
     isActive: true,
     statusCode1: 200,
     statusCode2: 201,
-    deleteStatus: 204
+    deleteStatus: 204,
+    note: "This note is created"
 
 
 }
