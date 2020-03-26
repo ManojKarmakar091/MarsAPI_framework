@@ -7,7 +7,6 @@
     "pretest": "rm -rf allure-report",
     "testsmoke": "protractor config.js --grep=@smoke",
     "testregression": "protractor Config/config.js --grep=@regression",
-
     "posttest": "allure generate allure-results --clean -o allure-report || true"
   },
   "author": "",
@@ -16,7 +15,8 @@
     "axios": "0.19.2",
     "config.ini": "0.0.60",
     "protractor": "^5.4.3",
-    "xlsx": "^0.15.5"
+    "xlsx": "^0.15.5",
+    "@azure/cosmos": "3.5.2"
   },
   "devDependencies": {
     "allure-commandline": "^2.13.0",
