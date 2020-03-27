@@ -1,7 +1,7 @@
 // @ts-check
 const CosmosClient = require("@azure/cosmos").CosmosClient;
-const config = require("../DAO/config");
-const dbContext = require("../DAO/databaseContext");
+const config = require("../config/AccountDB");
+const dbContext = require("./databaseContext");
 
 // const newItem = {
 //   id: "3",

@@ -1,4 +1,4 @@
-const config = require("../DAO/config");
+const config = require("../config/AccountDB");
 const CosmosClient = require("@azure/cosmos").CosmosClient;
 
 /*
